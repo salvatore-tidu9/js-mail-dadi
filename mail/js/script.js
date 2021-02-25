@@ -1,30 +1,35 @@
-var user_mail = prompt("Inserisci la tua mail");
-
-console.log(user_mail);
-
 var mail = ["user1@mail.com", "user2@mail.com", "user3@mail.com", "user4@mail.com", "user5@mail.com", "user6@mail.com"];
 
-console.log(mail);
+// console.log(mail);
 
-mail.push("user7@mail.com");
+
+var user_mail = prompt("Inserisci la tua mail");
+
+// console.log(user_mail);
+
+
+var new_mail = false;
 
 
 for (var i = 0; i < mail.length; i++) {
 
-    console.log(mail[i]);
+    // console.log(mail[i]);
 
     if (user_mail == mail[i]) {
 
-        alert("Accesso consentito !");
-        
+        new_mail = true;
     }
-
-    else if (user_mail != mail[i]) {
-
-        alert("Accesso negato !");
-    }
-
 }
 
+
+if (new_mail == true) {
+
+    alert("Accesso consentito !");
+}
+
+else {
+    
+    alert("Acesso negato !");
+}
 
 
